@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
- <head>
-    <meta charset="utf-8" />
-    <title>o(TヘTo)</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/2.0.4/p5.min.js" integrity="sha512-rOTpdy9fXlcLeLxPj5H4pof51FAx2lVK8Soexk8yTek9wrenwm56MKT2VddH8GCDd4a2js2i4GwezlUkbGdVQg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
- </head>
+    <head>
+        <meta charset="utf-8" />
+        <title>Herramientas Computacionales</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/2.0.4/p5.min.js" integrity="sha512-rOTpdy9fXlcLeLxPj5H4pof51FAx2lVK8Soexk8yTek9wrenwm56MKT2VddH8GCDd4a2js2i4GwezlUkbGdVQg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="style.css" rel="stylesheet">
+    </head>
     <body>
         <main>
             <div>
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 595.28 841.89" style="enable-background:new 0 0 595.28 841.89;" xml:space="preserve">
-<style type="text/css">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 595.28 841.89" width="500" height="500" xml:space="preserve"> <style type="text/css">
 	.st0{fill:#C73D96;}
+<defs>                   
 </style>
 <path id="taza" d="M471.42,584.4l6.46-28.93c0.58-2.61,0.4-5.21-0.36-7.59c-0.05-0.16-0.11-0.32-0.16-0.48
 	c-0.07-0.19-0.13-0.39-0.21-0.58c-2.12-5.45-7.4-9.33-13.61-9.33H300.93l5.54-235.73c58.38-1.89,105.12-49.8,105.12-108.64
@@ -30,24 +28,55 @@
 	C496.13,622,513.99,654.43,505.01,685.45z"/>
 <path id="lucecita" class="st0" d="M240.44,152.83l16.2,8.12c14.11-28.25,29.3-46.74,34.55-52l-12.83-12.83
 	C271.54,102.95,255.29,123.1,240.44,152.83z"/>
-</svg
-                <h1>holi, soy <span id="nombre"></span></h1>
-                <p>en la asignatura de herramientas computacionales espero aprender sobre nuevas herramientas computacionales que me sirvan en mi aprendizaje en la universidad <span id="aprendizaje"></span>.</p>
-                <h2>mis amix esperan aprender:</h2>
-    <ol>
-    <li>
-     <img src="https://ucampus.uchile.cl/d/r/usuario/ab/ab3608b141edd9f875e1f4f2d50d3b5d/perfil/11545fb89728e5e10eb439ab403220f0.jpg"/>
-     <a href="https://milladincea.github.io/primeravezdemillantitos/">millantitos 𖦹</a></li>
-    <li>
-     <img src="https://ucampus.uchile.cl/d/r/usuario/55/550d4508e49024986a14885b35cca65f/perfil/7e9d39fc831d87cb8ff27eac610240c8.jpg"/>
-     <a href="https://valentinaavila21.github.io/miprimeraweb/">valu ≽^•⩊•^≼</a></li>
-    <li>
-     <img src="https://ucampus.uchile.cl/d/r/usuario/f3/f3010585248916cc90e7dfd21f9183a3/perfil/c84d5d312c2b487c383303c5112f6243.jpg"/>
-          <a href="https://martinaurzua.github.io/mi-primera-vez/">marti</a></li>
-   </ol>
+</svg>
+
+                <h1>Hola, yo soy <span id="nombre"></span></h1>
+                <p>En la asignatura de Herramientas Computacionales espero aprender <span id="aprendizaje"></span>.</p>
+                <h2>Tengo compañeres que esperan aprender:</h2>
+               <ol>
+                    <li>
+                        <img src="https://ucampus.uchile.cl/d/r/usuario/ab/ab3608b141edd9f875e1f4f2d50d3b5d/perfil/11545fb89728e5e10eb439ab403220f0.jpg"/>
+                        <a href="https://milladincea.github.io/primeravezdemillantitos/">milla</a></li>
+                    
+                    <li>
+                        <img src="https://ucampus.uchile.cl/d/r/usuario/f3/f3010585248916cc90e7dfd21f9183a3/perfil/c84d5d312c2b487c383303c5112f6243.jpg"/>
+                        <a href="https://martinaurzua.github.io/mi-primera-vez/">marti</a></li>
+                    
+                    <li>
+                        <img src="https://ucampus.uchile.cl/d/r/usuario/55/550d4508e49024986a14885b35cca65f/perfil/7e9d39fc831d87cb8ff27eac610240c8.jpg"/>
+                        <a href="https://valentinaavila21.github.io/miprimeraweb/">valu</a></li>
+                    
+                </ol>
             </div>
             <div id="pecinco"></div>
         </main>
+            var valor = document.getElementById("pecinco").offsetWidth;
+
+            window.addEventListener("resize", function () {
+                valor = document.getElementById("pecinco").offsetWidth;
+            });
+
+            function setup() {
+                createCanvas(valor, valor, WEBGL).parent("#pecinco");
+                select("#nombre").html("Angelina Caviedes");
+                select("#aprendizaje").html("Me gustaria aprender más sobre herramientas computacionales, como illustrator, que me ayuden a potenciar mis proyectos");
+            }
+            noStroke();
+            function draw() {
+                background(255, 216, 223);
+                orbitControl();
+                pointLight (255, 255, 255, valor/3, valor/2, 50);
+                specularMaterial(255);
+                shininess(50);
+                metalness(1);
+                fill(70, 120, 255);
+                sphere(valor/4, valor/4);
+            }
+
+            function windowResized() {
+                resizeCanvas(valor, valor);
+            }
         <script src="sketch.js"></script>
     </body>
 </html>
+
