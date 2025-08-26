@@ -1,50 +1,70 @@
 html,
-            body {
-                margin: 0;
-                padding: 0;
-                background: pink;
-                  font-family: "Google Sans Code", monospace;
-            }
+ body {
+     font-family: "Nunito", monospace;
+     color: deeppink;
+     margin: 0;
+     padding: 0;
+     background: pink;
+ }
 
-            h1 {
-                text-wrap: balance;
-            }
+ h1 {
+     text-wrap: balance;
+ }
 
-            canvas {
-                display: block;
-                text-align: center;
-            }
+ canvas {
+     display: block;
+     text-align: center;
+ }
 
-            main {
-                position: fixed;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                width: min(90vw, 800px);
-                background: rgba(255, 255, 255, 0.25);
-                box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
-                border-radius: 10px;
-            }
+ main {
+     position: fixed;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     width: min(90vw, 900px);
+     background: rgba(255, 255, 255, 0.3);
+     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+     border-radius: 10px;
+     backdrop-filter: blur(10px);
+ }
 
-            main > div {
-                width: 46%;
-                margin: 2%;
-                float: left;
-            }
+ main > div {
+     width: 46%;
+     margin: 2%;
+     float: left;
+ }
 
-            @media (orientation: portrait) {
-                main > div {
-                    width: 96%;
-                    margin: 2%;
-                    float: none;
-                }
-            }
+ @media (orientation: portrait) {
+     main > div {
+         width: 96%;
+         margin: 2%;
+         float: none;
+     }
+ }
 
-            canvas {
-                border-radius: 10px;
-            }
+ canvas {
+     border-radius: 10px;
+ }
 
-            span {
-                text-decoration: underline;
-            }
-      
+ span {
+     text-decoration: underline;
+ }
+ ol {
+     margin: 0;
+     padding: 0;
+ }
+
+ li {
+     list-style: none;
+     line-height: 2rem;
+     border-bottom: 2px solid hotpink;
+     display: flex;
+     padding: 0.3rem 0;
+ }
+
+ li img {
+     border-radius: 50% 50%;
+     width: 2rem;
+     height: 2rem;
+     margin-right: 1rem;
+ }
